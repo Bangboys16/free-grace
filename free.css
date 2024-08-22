@@ -1,0 +1,402 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.5s, color 0.5s;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.theme-toggle button {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.theme-toggle button i {
+    margin-right: 5px;
+}
+
+.theme-toggle button:hover {
+    background-color: #34495e;
+}
+
+/* Header Styles */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 60px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f4f4f4;
+}
+
+/* Slideshow Styles */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+.slide-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* General Overseer Section */
+.general-overseer {
+    background-color: #ecf0f1;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.overseer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.overseer-container img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.overseer-container img:hover {
+    transform: scale(1.05);
+}
+
+.overseer-container p {
+    font-size: 22px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Announcement Section */
+.announcements {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+}
+
+.announcement-item {
+    background-color: #e74c3c;
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.announcement-item button {
+    background-color: white;
+    color: #e74c3c;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.announcement-item button i {
+    margin-right: 5px;
+}
+
+.announcement-item button:hover {
+    background-color: #c0392b;
+    color: white;
+}
+
+/* Daily Devotional Section */
+#devotional {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#devotional p {
+    font-size: 18px;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#devotional p i {
+    margin-right: 10px;
+    color: #e74c3c;
+}
+
+/* Social Media Links Section */
+#social-media {
+    background-color: #2c3e50;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #f4f4f4;
+}
+
+/* Other Sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.services-container, .events-container, .location-container, .payment-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service-item, .event-item, .location-item, .payment-item {
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.service-item h3, .event-item h3, .location-item h3, .payment-item h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.service-item h3 i, .event-item h3 i, .location-item h3 i, .payment-item h3 i {
+    margin-right: 10px;
+    color: #2c3e50;
+}
+
+.service-item p, .event-item p, .location-item p, .payment-item p {
+    font-size: 16px;
+}
+
+/* Contact Form */
+#contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#contact-form button {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+#contact-form button i {
+    margin-right: 5px;
+}
+
+#contact-form button:hover {
+    background-color: #34495e;
+}
+
+/* Footer Section */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Dark Theme */
+body.dark-mode {
+    background-color: #333;
+    color: #ddd;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+body.dark-mode header {
+    background-color: #444;
+    transition: background-color 0.5s;
+}
+
+body.dark-mode .service-item, body.dark-mode .event-item, body.dark-mode .announcement-item, body.dark-mode .location-item, body.dark-mode .payment-item {
+    background-color: #555;
+    transition: background-color 0.5s;
+}
+
+body.dark-mode footer {
+    background-color: #444;
+    transition: background-color 0.5s;
+}
+
+body.dark-mode #social-media {
+    background-color: #444;
+    transition: background-color 0.5s;
+}
+
+body.dark-mode .text {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .services-container, .events-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .overseer-container img {
+        width: 150px;
+    }
+
+    .general-overseer, #devotional, .announcements, #social-media {
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .overseer-container img {
+        width: 120px;
+    }
+
+    .service-item, .event-item {
+        width: 100%;
+    }
+}
+
+/* Special Styles */
+.his-lordship {
+    color: #ff6b6b;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.motto {
+    color: rgba(224, 192, 11, 0.8);
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Grace Foundations International Inc</title>
+    <link rel="stylesheet" href="free.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <button onclick="toggleTheme()">
+            <i class="fas fa-adjust"></i> Toggle Theme
+        </button>
+    </div>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Church Logo">
+            <h1>Free Grace Foundations International Inc.</h1>
+            <p><span class="motto"><strong>Motto: Love in Service.</strong></span></p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#location">Branch</a></li>
+                <li><a href="#payment">Payments</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Slideshow Section -->
+    <section id="home" class="hero">
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="images/slide1.jpg" class="slide-img" alt="Slide 1">
+                <div class="text">Welcome</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/slide2.jpg" class="slide-img" alt="Slide 2">
+                <div class="text">Uncommon Love</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/slide3.jpg" class="slide-img" alt="Slide 3">
+                <div class="text">Family</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/slide4.jpg" class="slide-img" alt="Slide 4">
+                <div class="text">Love</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/slide5.jpg" class="slide-img" alt="Slide 5">
+                <div class="text">Great Joy</div>
+            </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </section>
+
+    <!-- General Overseer Section -->
+    <section id="general-overseer" class="general-overseer">
+        <h2>Our General Superintendent</h2>
+        <div class="overseer-container">
+            <img src="images/overseer.jpg" alt="General Overseer">
+            <p><span class="his-lordship">His Lordship Bishop Abraham Akpaidu</span></p>
+        </div>
+    </section>
+
+    <!-- Announcement Section -->
+    <section id="announcements" class="announcements">
+        <h2>Announcements</h2>
+        <div class="announcement-item">
+            <p>Announcement 1: Join us for the weekly Bible study on Wednesdays at 7 PM.</p>
+            <button onclick="removeAnnouncement(this)">
+                <i class="fas fa-check"></i> I've Read This
+            </button>
+        </div>
+        <div class="announcement-item">
+            <p>Announcement 2: Special prayer meeting this Friday at 6 PM.</p>
+            <button onclick="removeAnnouncement(this)">
+                <i class="fas fa-check"></i> I've Read This
+            </button>
+        </div>
+    </section>
+
+    <!-- Daily Devotional Section -->
+    <section id="devotional">
+        <h2>Daily Devotional</h2>
+        <p><i class="fas fa-book-open"></i> Today's message: "Trust in the Lord with all your heart and lean not on your own understanding." - Proverbs 3:5</p>
+    </section>
+
+    <!-- Social Media Links -->
+    <section id="social-media">
+        <h2>Connect with Us</h2>
+        <div class="social-links">
+            <a href="https://facebook.com" class="btn btn-outline-light btn-sm">
+                <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+            <a href="https://twitter.com" class="btn btn-outline-light btn-sm">
+                <i class="fab fa-twitter"></i> Twitter
+            </a>
+            <a href="https://instagram.com" class="btn btn-outline-light btn-sm">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </div>
+        <hr>
+        <p><strong>OR CALL: 08027514337</strong></p>
+    </section>
+
+    <!-- Other Sections -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Our Mission Statement: In partnership with the Holy Spirit, bringing the poor and needy into the programme of God!</p>
+        <p>Our 6-Point Vision Statement: Rural Evangelism, Youth Rehabilitation, Leadership Training, Special Missions, Pastoral Counseling, Intercession & Deliverance.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service-item">
+                <h3><i class="fas fa-church"></i> Sunday Service</h3>
+                <p>Join us every Sunday for our inspiring worship services and sermons.</p>
+            </div>
+            <div class="service-item">
+                <h3><i class="fas fa-bible"></i> Bible Study</h3>
+                <p>Tuesdays 6:00pm, Deepen your knowledge of God's Word through our weekly Bible study sessions.</p>
+            </div>
+            <div class="service-item">
+                <h3><i class="fas fa-praying-hands"></i> Tarry Night</h3>
+                <p>Participate in our tarry night and experience the power of prayer. Every third Friday of the month - 9pm.</p>
+            </div>
+            <div class="service-item">
+                <h3><i class="fas fa-hands-helping"></i> Deliverance Service</h3>
+                <p>Every Friday - 6pm.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <div class="events-container">
+            <div class="event-item">
+                <h3><i class="fas fa-calendar-alt"></i> Annual Convention</h3>
+                <p>Join us for our annual convention, where believers gather to worship and celebrate.</p>
+            </div>
+            <div class="event-item">
+                <h3><i class="fas fa-hands-helping"></i> Community Outreach</h3>
+                <p>Be a part of our community outreach programs and make a difference in lives.</p>
+            </div>
+            <div class="event-item">
+                <h3><i class="fas fa-pray"></i> Special Prayers</h3>
+                <p>Come for our special prayer sessions and experience God's divine touch.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="location">
+        <h2>Worship With Us</h2>
+        <div class="location-container">
+            <div class="location-item">
+                <h3><i class="fas fa-map-marker-alt"></i>Our Headquarters</h3>
+                <p>Embassy of Grace, P.O.BOX 380, Etinan LGA, Akwa Ibom state, Nigeria.</p>
+            </div>
+            <div class="location-item">
+                <h3><i class="fas fa-map-marker-alt"></i>Our Branch</h3>
+                <p></p>
+            </div>
+            <div class="location-item">
+                <h3><i class="fas fa-map-marker-alt"></i>Our Branch</h3>
+                <p></p>
+            </div>
+            <div class="location-item">
+                <h3><i class="fas fa-map-marker-alt"></i>Our Branch</h3>
+                <p></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="payment">
+        <h2>Make Payments or Donations</h2>
+        <div class="payment-container">
+            <div class="payment-item">
+                <h3><i class="fas fa-money-check-alt"></i> Tithes</h3>
+                <p>Give your tithes securely online.</p>
+            </div>
+            <div class="payment-item">
+                <h3><i class="fas fa-hand-holding-heart"></i> Offerings</h3>
+                <p>Contribute to the work of the church through your offerings.</p>
+            </div>
+            <div class="payment-item">
+                <h3><i class="fas fa-donate"></i> Special Donations</h3>
+                <p>Support our special missions and outreach programs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div id="contact-form">
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Free Grace Foundations International Inc. All rights reserved.</p>
+
+        <p><Strong>Developed by the ICT Department Free Grace Foundations Int'l Inc.</Strong></p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

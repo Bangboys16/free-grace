@@ -92,3 +92,21 @@ document.querySelectorAll('.service-item h3, .event-item h3, .location-item h3, 
     }
     // Add more conditions as needed for other icons
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Function to add the 'fade-up' class when elements are visible
+    const fadeUpElements = document.querySelectorAll("section, .slide, .service-item, .event-item, .location-item, .payment-item, .announcement-item, .social-links a");
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-up');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    fadeUpElements.forEach(element => {
+        observer.observe(element);
+    });
+});

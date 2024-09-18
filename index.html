@@ -21,11 +21,11 @@
     </div>
 
     <!-- Header Section -->
-    <header>
+    <header class="fade-up">
         <div class="logo">
             <img src="images/logo.jpg" alt="Church Logo">
             <h1>Free Grace Foundations International Inc.</h1>
-            <p><span class="motto"><strong>Motto: Love in Service.</strong></span></p>
+            <p><span class="motto"><strong>Motto: Love in Service.</strong></span></p> 
         </div>
         <nav>
             <ul>
@@ -40,7 +40,7 @@
     </header>
 
     <!-- Slideshow Section -->
-    <section id="home" class="hero">
+    <section id="home" class="hero fade-up">
         <div class="slideshow-container">
             <div class="slide fade">
                 <img src="images/slide1.jpg" class="slide-img" alt="Slide 1">
@@ -74,7 +74,7 @@
     </section>
 
     <!-- General Overseer Section -->
-    <section id="general-overseer" class="general-overseer">
+    <section id="general-overseer" class="general-overseer fade-up">
         <h2>Our General Superintendent</h2>
         <div class="overseer-container">
             <img src="images/overseer.jpg" alt="General Overseer">
@@ -83,10 +83,10 @@
     </section>
 
     <!-- Announcement Section -->
-    <section id="announcements" class="announcements">
+    <section id="announcements" class="announcements fade-up">
         <h2>Announcements</h2>
         <div class="announcement-item">
-            <p>Announcement 1: Join us for the weekly Bible study on Wednesdays at 7 PM.</p>
+            <p>Announcement 1: Join us for the weekly Bible study on Tuesdays at 6 PM.</p>
             <button onclick="removeAnnouncement(this)">
                 <i class="fas fa-check"></i> I've Read This
             </button>
@@ -100,13 +100,13 @@
     </section>
 
     <!-- Daily Devotional Section -->
-    <section id="devotional">
+    <section id="devotional fade-up">
         <h2>Daily Devotional</h2>
         <p><i class="fas fa-book-open"></i> Today's message: "Trust in the Lord with all your heart and lean not on your own understanding." - Proverbs 3:5</p>
     </section>
 
     <!-- Social Media Links -->
-    <section id="social-media">
+    <section id="social-media" class="fade-up">
         <h2>Connect with Us</h2>
         <div class="social-links">
             <a href="https://facebook.com" target="_blank" class="btn btn-outline-light btn-sm">
@@ -124,13 +124,13 @@
     </section>
 
     <!-- Other Sections -->
-    <section id="about">
+    <section id="about" class="fade-up">
         <h2>About Us</h2>
         <p>Our Mission Statement: In partnership with the Holy Spirit, bringing the poor and needy into the programme of God!</p>
         <p>Our 6-Point Vision Statement: Rural Evangelism, Youth Rehabilitation, Leadership Training, Special Missions, Pastoral Counseling, Intercession & Deliverance.</p>
     </section>
 
-    <section id="services">
+    <section id="services" class="fade-up">
         <h2>Our Services</h2>
         <div class="services-container">
             <div class="service-item">
@@ -152,7 +152,7 @@
         </div>
     </section>
 
-    <section id="events">
+    <section id="events" class="fade-up">
         <h2>Upcoming Events</h2>
         <div class="events-container">
             <div class="event-item">
@@ -170,7 +170,7 @@
         </div>
     </section>
 
-    <section id="location">
+    <section id="location" class="fade-up">
         <h2>Worship With Us</h2>
         <div class="location-container">
             <div class="location-item">
@@ -192,7 +192,7 @@
         </div>
     </section>
 
-    <section id="payment">
+    <section id="payment" class="fade-up">
         <h2>Make Payments or Donations</h2>
         <div class="payment-container">
             <div class="payment-item">
@@ -211,7 +211,7 @@
     </section>
 
     <!-- Contact Form -->
-    <section id="contact">
+    <section id="contact" class="fade-up">
         <h2>Contact Us</h2>
         <div id="contact-form">
             <form>
@@ -221,7 +221,7 @@
                 <input type="email" id="email" name="email" required>
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
-                <button type="submit"><i class="fas fa-paper-plane"></i> <a href="mailto:freegrace@gmail.com">Send Message</a></button>
+                <button type="submit"><i class="fas fa-paper-plane"></i> <strong><a href="mailto:freegrace@gmail.com" class="send-message">Send Message</a></strong></button>
             </form>
         </div>
     </section>
@@ -231,8 +231,11 @@
         <p>&copy; 2024 Free Grace Foundations International Inc. All rights reserved.</p>
 
         <p><Strong>Developed by the ICT Department Free Grace Foundations Int'l Inc.</Strong></p>
+
+   
     </footer>
 
+    
     <!-- JavaScript -->
     <script src="script.js"></script>
 </body>

@@ -400,200 +400,24 @@ body.dark-mode .text {
 .motto {
     color: rgba(224, 192, 11, 0.8);
 }
-/* General Fade-Up Animation */
-/* General Fade-Up Animation */
+
 @keyframes fadeUp {
-    0% {
-        transform: translateY(20px);
+    from {
         opacity: 0;
+        transform: translateY(20px);
     }
-    100% {
-        transform: translateY(0);
+    to {
         opacity: 1;
+        transform: translateY(0);
     }
+
 }
 
-/* Default state before fade-up */
-section, .slide, .service-item, .event-item, .location-item, .payment-item, .announcement-item, .social-links a {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-/* Fade-up effect when in viewport */
 .fade-up {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-
-/* Apply Fade-Up Effect to Sections */
-section {
-    opacity: 0; /* Initially hidden */
-    animation: fadeUp 1s ease-out forwards;
-}
-
-/* Apply to Different Elements Using :nth-child */
-header, section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-child(5), section:nth-child(6), section:nth-child(7), section:nth-child(8), section:nth-child(9), section:nth-child(10) {
-    animation-delay: 0.2s;
-}
-
-section:nth-child(11) {
-    animation-delay: 0.4s;
-}
-
-section:nth-child(12) {
-    animation-delay: 0.6s;
-}
-
-section:nth-child(13) {
-    animation-delay: 0.8s;
-}
-
-section:nth-child(14) {
-    animation-delay: 1s;
-}
-
-footer {
-    animation: fadeUp 1s ease-out forwards;
-    animation-delay: 1.2s;
-}
-
-/* Fade-Up Effect for Slideshow Images */
-.slideshow-container .slide {
     opacity: 0;
     animation: fadeUp 1s ease-out forwards;
 }
 
-.slideshow-container .slide:nth-child(1) {
-    animation-delay: 0s;
+.send-message {
+    color: orangered;
 }
-
-.slideshow-container .slide:nth-child(2) {
-    animation-delay: 0.2s;
-}
-
-.slideshow-container .slide:nth-child(3) {
-    animation-delay: 0.4s;
-}
-
-.slideshow-container .slide:nth-child(4) {
-    animation-delay: 0.6s;
-}
-
-.slideshow-container .slide:nth-child(5) {
-    animation-delay: 0.8s;
-}
-
-/* Fade-Up Effect for Service Items */
-.services-container .service-item {
-    opacity: 0;
-    animation: fadeUp 1s ease-out forwards;
-}
-
-.services-container .service-item:nth-child(1) {
-    animation-delay: 0.2s;
-}
-
-.services-container .service-item:nth-child(2) {
-    animation-delay: 0.4s;
-}
-
-.services-container .service-item:nth-child(3) {
-    animation-delay: 0.6s;
-}
-
-.services-container .service-item:nth-child(4) {
-    animation-delay: 0.8s;
-}
-
-/* Fade-Up Effect for Event Items */
-.events-container .event-item {
-    opacity: 0;
-    animation: fadeUp 1s ease-out forwards;
-}
-
-.events-container .event-item:nth-child(1) {
-    animation-delay: 0.2s;
-}
-
-.events-container .event-item:nth-child(2) {
-    animation-delay: 0.4s;
-}
-
-.events-container .event-item:nth-child(3) {
-    animation-delay: 0.6s;
-}
-
-/* Fade-Up Effect for Location Items */
-.location-container .location-item {
-    opacity: 0;
-    animation: fadeUp 1s ease-out forwards;
-}
-
-.location-container .location-item:nth-child(1) {
-    animation-delay: 0.2s;
-}
-
-.location-container .location-item:nth-child(2) {
-    animation-delay: 0.4s;
-}
-
-.location-container .location-item:nth-child(3) {
-    animation-delay: 0.6s;
-}
-
-.location-container .location-item:nth-child(4) {
-    animation-delay: 0.8s;
-}
-
-/* Fade-Up Effect for Payment Items */
-.payment-container .payment-item {
-    opacity: 0;
-    animation: fadeUp 1s ease-out forwards;
-}
-
-.payment-container .payment-item:nth-child(1) {
-    animation-delay: 0.2s;
-}
-
-.payment-container .payment-item:nth-child(2) {
-    animation-delay: 0.4s;
-}
-
-.payment-container .payment-item:nth-child(3) {
-    animation-delay: 0.6s;
-}
-
-/* Fade-Up Effect for Announcements */
-.announcements .announcement-item {
-    opacity: 0;
-    animation: fadeUp 1s ease-out forwards;
-}
-
-.announcements .announcement-item:nth-child(1) {
-    animation-delay: 0.2s;
-}
-
-.announcements .announcement-item:nth-child(2) {
-    animation-delay: 0.4s;
-}
-
-/* Fade-Up Effect for Social Media Links */
-.social-links a {
-    opacity: 0;
-    animation: fadeUp 1s ease-out forwards;
-}
-
-.social-links a:nth-child(1) {
-    animation-delay: 0.2s;
-}
-
-.social-links a:nth-child(2) {
-    animation-delay: 0.4s;
-}
-
-.social-links a:nth-child(3) {
-    animation-delay: 0.6s;
-}
-
